@@ -17,3 +17,6 @@ class Lazy {
 fun main(args: Array<String>) {
     Lazy().hello()
 }
+/*
+1
+ */

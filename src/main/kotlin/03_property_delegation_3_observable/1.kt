@@ -24,3 +24,8 @@ fun main() {
     // Changed to B
     // Now it is B
 }
+/*
+Changed to A
+Changed to B
+Now it is B
+ */

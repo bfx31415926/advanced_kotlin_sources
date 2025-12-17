@@ -16,3 +16,9 @@ fun main() {
     println(book) // Ice
     println(page) // 0
 }
+/*
+TheWitcher
+69
+Ice
+0
+ */
