@@ -8,3 +8,6 @@ fun main() {
     user1.name = "Bartek"
     println(user2.name)
 }
+/*
+Bartek
+ */

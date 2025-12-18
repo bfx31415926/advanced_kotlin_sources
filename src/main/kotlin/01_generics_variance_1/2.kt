@@ -13,7 +13,7 @@ fun main() {
     intConsumer.consume(42) // Consuming 42
     val floatConsumer: Consumer<Float> = numberConsumer
     floatConsumer.consume(3.14F) // Consuming 3.14
-    
+
     val anyConsumer: Consumer<Any> = Consumer()
     anyConsumer.consume(123456789L) // Consuming 123456789
     val stringConsumer: Consumer<String> = anyConsumer

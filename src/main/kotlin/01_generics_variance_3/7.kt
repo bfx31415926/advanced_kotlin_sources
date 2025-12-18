@@ -16,7 +16,7 @@ fun main() {
     fillWithPuppies(dogs)
     println(dogs)
     // [Wolf(name=Pluto), Puppy(name=Jim), Puppy(name=Beam)]
-    
+
     val pets = mutableListOf<Pet>(Cat("Felix"))
     fillWithPuppies(pets)
     println(pets)

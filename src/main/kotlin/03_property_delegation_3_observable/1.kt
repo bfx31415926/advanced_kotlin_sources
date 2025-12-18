@@ -4,11 +4,11 @@ import kotlin.properties.Delegates.observable
 
 class ObservableProperty<T>(initial: T) {
     private var observers: List<(T) -> Unit> = listOf()
-    
+
     var value: T by observable(initial) { _, _, new ->
         observers.forEach { it(new) }
     }
-    
+
     fun addObserver(observer: (T) -> Unit) {
         observers += observer
     }

@@ -1,14 +1,14 @@
 package f_01_generics_variance_3.myFile3
 
 open class A
-class B: A()
+class B : A()
 
 class Box<T>        //инвариантность
 class BoxIn<in T>   //контрвариантность
 class BoxOut<out T> //ковариантность
 
 
-fun main(){
+fun main() {
     //инвариантность
     var boxA: Box<A> = Box<A>()
     var boxB: Box<B> = Box<B>()

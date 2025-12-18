@@ -10,7 +10,7 @@ private class LoggingProperty<T>(var value: T) {
 
     operator fun setValue(
         thisRef: Any?,
-        prop: KProperty<*>, 
+        prop: KProperty<*>,
         newValue: T
     ) {
         println("${prop.name} changed from $value to $newValue")

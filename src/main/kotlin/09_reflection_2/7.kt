@@ -12,7 +12,7 @@ class UserJson(val name: String)
 fun main() {
     val constructors: Collection<KFunction<User>> =
         User::class.constructors
-    
+
     println(constructors.size) // 3
     constructors.forEach(::println)
     // fun <init>(playground.User): playground.User

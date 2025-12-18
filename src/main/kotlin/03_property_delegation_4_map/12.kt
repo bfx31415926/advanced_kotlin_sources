@@ -15,10 +15,13 @@ val population = Population(
 )
 
 fun main(args: Array<String>) {
-    // Years has passed,
-    // now we all live on Mars
     population.cities = emptyMap()
     println(population.sanFrancisco)
     println(population.tallinn)
     println(population.kotlin)
 }
+/*
+864816
+413782
+43005
+ */

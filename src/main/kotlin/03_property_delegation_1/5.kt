@@ -10,7 +10,7 @@ fun main() {
     println(a) // 10
     a = 20
     println(a) // 20
-    
+
     println(b) // IllegalStateException:
     // Property b should be initialized before getting.
 }

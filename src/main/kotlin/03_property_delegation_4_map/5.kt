@@ -6,3 +6,6 @@ fun main() {
     a = 20
     println(b)
 }
+/*
+10
+ */

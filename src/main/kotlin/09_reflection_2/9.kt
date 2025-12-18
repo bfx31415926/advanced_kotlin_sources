@@ -12,7 +12,7 @@ fun main() {
     println(B::class.isInstance(a)) // false
     println(I1::class.isInstance(a)) // true
     println(I2::class.isInstance(a)) // false
-    
+
     println(A::class.isInstance(b)) // true
     println(B::class.isInstance(b)) // true
     println(I1::class.isInstance(b)) // true

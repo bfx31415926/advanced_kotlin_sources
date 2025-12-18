@@ -7,7 +7,7 @@ data class User(
     val gender: String,
 // ...
 ) {
-    val fullDisplay: String by lazy { produceFullDisplay()}
+    val fullDisplay: String by lazy { produceFullDisplay() }
 
     fun produceFullDisplay(): String {
         print("Calculating...")
@@ -21,7 +21,7 @@ fun main() {
     val copy = user.copy()
     println(copy.fullDisplay) // Calculating... XYZ
     println(copy.fullDisplay) // XYZ
- }
+}
 /*
 Calculating...XYZ
 XYZ

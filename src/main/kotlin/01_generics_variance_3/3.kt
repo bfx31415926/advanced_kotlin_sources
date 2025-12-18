@@ -13,10 +13,10 @@ fun main() {
     val amphibious: Amphibious = producer.produce()
     val boat: Boat = producer.produce()
     val car: Car = producer.produce()
-    
+
     val boatProducer: Producer<Boat> = producer
     val boat1: Boat = boatProducer.produce()
-    
+
     val carProducer: Producer<Car> = producer
     val car2: Car = carProducer.produce()
 }

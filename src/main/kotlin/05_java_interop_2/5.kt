@@ -4,7 +4,7 @@ import java.math.BigDecimal
 
 class Money(val amount: BigDecimal, val currency: String) {
     companion object {
-        fun usd(amount: Double) = 
+        fun usd(amount: Double) =
             Money(amount.toBigDecimal(), "PLN")
     }
 }

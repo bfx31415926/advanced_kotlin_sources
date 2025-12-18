@@ -6,3 +6,6 @@ fun main() {
     list1 += 4
     println(list2)
 }
+/*
+[1, 2, 3]
+ */

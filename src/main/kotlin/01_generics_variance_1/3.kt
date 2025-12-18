@@ -3,6 +3,7 @@ package f_01_generics_variance_1.s_3
 fun printProcessedNumber(transformation: (Int) -> Any) {
     println(transformation(42))
 }
+
 val intToDouble: (Int) -> Number = { it.toDouble() }
 val numberAsText: (Number) -> String = { it.toString() }
 val identity: (Number) -> Number = { it }

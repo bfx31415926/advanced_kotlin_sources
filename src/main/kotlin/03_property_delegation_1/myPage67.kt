@@ -9,6 +9,7 @@ class EmptyPropertyDelegate {
     ): String {
         return ""
     }
+
     operator fun setValue(
         thisRef: Any?,
         property: KProperty<*>,
@@ -17,6 +18,7 @@ class EmptyPropertyDelegate {
 // no-op
     }
 }
+
 val p1: String by EmptyPropertyDelegate()
 var p2: String by EmptyPropertyDelegate()
 

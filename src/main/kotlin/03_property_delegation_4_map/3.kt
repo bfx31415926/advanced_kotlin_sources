@@ -19,8 +19,16 @@ fun main() {
     user.name = "Bolek"
     println(user.name)  // Bolek
     println(user.map)  // {id=123, name=Bolek}
-    
+
     user.map["id"] = 456
     println(user.id)  // 456
     println(user.map)  // {id=456, name=Bolek}
 }
+/*
+Alek
+123
+Bolek
+{id=123, name=Bolek}
+456
+{id=456, name=Bolek}
+ */

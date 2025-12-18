@@ -7,6 +7,7 @@ class LoggingProperty<T>(var value: T) {
         println("${prop.name} getter returned $value")
         return value
     }
+
     operator fun setValue(
         thisRef: Any?,
         prop: KProperty<*>,

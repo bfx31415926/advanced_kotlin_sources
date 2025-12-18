@@ -7,6 +7,7 @@ fun takeIntMutableList(list: MutableList<Int>) {}
 fun takeAnyList(list: List<Any>) {}
 
 class BoxOut<out T>
+
 fun takeBoxOutInt(box: BoxOut<Int>) {}
 
 fun takeBoxOutNumber(box: BoxOut<Number>) {}
@@ -16,6 +17,7 @@ fun takeBoxOutNothing(box: BoxOut<Nothing>) {}
 fun takeBoxOutStar(box: BoxOut<*>) {}
 
 class BoxIn<in T>
+
 fun takeBoxInInt(box: BoxIn<Int>) {}
 
 fun main() {

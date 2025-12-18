@@ -7,8 +7,8 @@ class Failure<R, E>(val error: E) : Response<R, E>()
 fun main() {
     val rs1 = Success<Int, Nothing>(1)
     val rs2 = Success<String, Nothing>("ABC")
-    val re1 = Failure<Nothing,Error>( Error() )
-    val re2 = Failure<Nothing,String>( "Error" ) // Compilation error
+    val re1 = Failure<Nothing, Error>(Error())
+    val re2 = Failure<Nothing, String>("Error") // Compilation error
 
 //    val rs11 = Success(1) // Compilation error
 //    val rs22 = Success("ABC") // Compilation error

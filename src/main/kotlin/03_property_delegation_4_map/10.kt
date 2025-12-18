@@ -6,3 +6,6 @@ fun main() {
     mmap["a"] = 20
     println(a)
 }
+/*
+20
+ */

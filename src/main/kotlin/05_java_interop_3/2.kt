@@ -12,7 +12,7 @@ class EmailSender {
         receiver: String,
         title: String = "",
         message: String = "",
-    ) { 
+    ) {
         /*...*/
     }
 }

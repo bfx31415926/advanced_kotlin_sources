@@ -9,7 +9,7 @@ class GenericCreature : Creature {
         // this.javaClass.name is always GenericCreature
         println("${this::class.simpleName} attacks")
     }
-    
+
     fun walk() {}
 }
 

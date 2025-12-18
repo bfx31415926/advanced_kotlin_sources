@@ -4,12 +4,12 @@ open class Dog
 class Puppy : Dog()
 open class Hound : Dog()
 
-open class Other: Hound()
-class Other1: Other()
+open class Other : Hound()
+class Other1 : Other()
 
 class Box<in T> {
     private var value: T? = null
-    
+
     fun put(value: T) {
         this.value = value
     }

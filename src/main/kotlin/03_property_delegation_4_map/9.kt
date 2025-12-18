@@ -6,3 +6,6 @@ fun main() {
     map = mapOf("a" to 20)
     println(a)
 }
+/*
+10
+ */

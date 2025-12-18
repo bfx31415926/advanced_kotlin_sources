@@ -3,10 +3,10 @@ package f_03_property_delegation_3_observable.s_3
 import kotlin.properties.Delegates.vetoable
 
 var smallList: List<String> by
-    vetoable(emptyList()) { _, _, new ->
-        println(new)
-        new.size <= 3
-    }
+vetoable(emptyList()) { _, _, new ->
+    println(new)
+    new.size <= 3
+}
 
 fun main() {
     smallList = listOf("A", "B", "C") // [A, B, C]
@@ -16,3 +16,11 @@ fun main() {
     smallList = listOf("H") // [H]
     println(smallList) // [H]
 }
+/*
+[A, B, C]
+[A, B, C]
+[D, E, F, G]
+[A, B, C]
+[H]
+[H]
+ */

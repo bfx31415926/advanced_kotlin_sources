@@ -10,3 +10,7 @@ fun main() {
     println(name) // Marcin
     println(kotlinProgrammer) // true
 }
+/*
+Marcin
+true
+ */
