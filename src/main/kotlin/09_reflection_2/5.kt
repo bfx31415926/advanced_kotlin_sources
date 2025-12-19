@@ -29,3 +29,17 @@ fun main() {
     println(Filter::class.visibility) // INTERNAL
     println(Filter::class.isFun) // true
 }
+/*
+PUBLIC
+true
+false
+false
+false
+PRIVATE
+true
+true
+true
+false
+INTERNAL
+true
+ */

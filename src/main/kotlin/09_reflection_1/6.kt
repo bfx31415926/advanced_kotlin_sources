@@ -13,3 +13,7 @@ fun main() {
     p.set(box, 999)
     println(p.get(box)) // 999
 }
+/*
+0
+999
+ */

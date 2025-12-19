@@ -1,12 +1,13 @@
-package f_09_reflection_2.s_2
-
 import kotlin.reflect.KClass
 
-open class A
-class B : A()
+open class A1
+class B1 : A1()
 
 fun main() {
-    val a: A = B()
-    val clazz: KClass<out A> = a::class
-    println(clazz) // class B
+    val a1: A1 = B1()
+    val clazz: KClass<out A1> = a1::class
+    println(clazz) // class B1
 }
+/*
+class B1
+ */

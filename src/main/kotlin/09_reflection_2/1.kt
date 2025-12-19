@@ -1,5 +1,3 @@
-package f_09_reflection_2.s_1
-
 import kotlin.reflect.KClass
 
 class A
@@ -9,6 +7,10 @@ fun main() {
     println(class1) // class A
 
     val a: A = A()
-    val class2: KClass<out A> = a::class
+    var class2: KClass<out A> = a::class
     println(class2) // class A
 }
+/*
+class A
+class A
+ */

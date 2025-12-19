@@ -9,3 +9,7 @@ fun main() {
     println(clazz.simpleName) // E
     println(clazz.qualifiedName) // a.b.c.D.E
 }
+/*
+E
+a.b.c.D.E
+ */

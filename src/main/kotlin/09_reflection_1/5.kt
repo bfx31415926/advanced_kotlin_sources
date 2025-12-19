@@ -1,5 +1,4 @@
-/*
-package f_09_reflection_1.s_5
+//package f_09_reflection_1.s_5
 
 import kotlin.reflect.*
 import kotlin.reflect.full.memberExtensionProperties
@@ -21,9 +20,17 @@ fun main() {
     println(p2) // var str: kotlin.String
     val p3: KMutableProperty1<Box, Int> = Box::value
     println(p3) // var Box.value: kotlin.Int
+
+    //1 - ый вариант
     val p4: KProperty2<Box, *, *> = Box::class
         .memberExtensionProperties
         .first()
+
+    //2 - ый вариант (если я точно знаю все параметры)
+//    @Suppress("UNCHECKED_CAST")
+//    val p4: KProperty2<Box, Int, Box> = Box::class
+//        .memberExtensionProperties
+//        .first() as KProperty2<Box, Int, Box>
+
     println(p4) // val Box.(kotlin.Int.)addedToBox: Box
 }
-*/

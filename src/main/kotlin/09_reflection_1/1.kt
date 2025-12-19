@@ -1,4 +1,3 @@
-/*
 package f_09_reflection_1.s_1
 
 import kotlin.reflect.full.memberProperties
@@ -43,4 +42,13 @@ fun main() {
     // * name: BORDER_COLLIE
     // * ordinal: 3
 }
-*/
+/*
+ * children: 0
+ * female: true
+ * name: Esmeralda
+ * surname: Weatherwax
+ * age: 1
+ * name: Cookie
+ * name: BORDER_COLLIE
+ * ordinal: 3
+ */
