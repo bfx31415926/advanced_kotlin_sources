@@ -1,10 +1,21 @@
-package f_09_reflection_2.s_11
-
-class A {
-    class B
-    inner class C
+class A3 {
+    class B3
+    inner class C3
 }
 
 fun main() {
-    println(A::class.nestedClasses) // [class A$B, class A$C]
+    println(A3::class.nestedClasses)
+    println("Типы внутренних классов A3:")
+    for (nestedClass in A3::class.nestedClasses) {
+        when {
+            nestedClass.isInner -> println("Inner: ${nestedClass.simpleName}")
+            else -> println("Static nested: ${nestedClass.simpleName}")
+        }
+    }
 }
+/*
+[class A3$B3, class A3$C3]
+Типы внутренних классов A3:
+Static nested: B3
+Inner: C3
+ */

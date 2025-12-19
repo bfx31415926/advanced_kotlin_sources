@@ -18,3 +18,13 @@ fun main() {
     println(I1::class.isInstance(b)) // true
     println(I2::class.isInstance(b)) // true
 }
+/*
+true
+false
+true
+false
+true
+true
+true
+true
+ */

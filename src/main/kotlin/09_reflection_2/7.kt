@@ -19,3 +19,9 @@ fun main() {
     // fun <init>(playground.UserJson): playground.User
     // fun <init>(kotlin.String): playground.User
 }
+/*
+3
+fun `<init>`(playground.User): playground.User
+fun `<init>`(playground.UserJson): playground.User
+fun `<init>`(kotlin.String): playground.User
+ */

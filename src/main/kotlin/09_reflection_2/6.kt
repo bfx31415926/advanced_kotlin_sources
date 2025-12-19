@@ -1,4 +1,3 @@
-/*
 package f_09_reflection_2.s_6
 
 import kotlin.reflect.full.*
@@ -30,4 +29,11 @@ fun main() {
     println(Child::class.declaredMemberProperties.map { it.name })
     // [c]
 }
-*/
+/*
+[c, d, a, b, equals, hashCode, toString]
+[d, b, equals, hashCode, toString]
+[c, a]
+[c, d]
+[d]
+[c]
+ */
