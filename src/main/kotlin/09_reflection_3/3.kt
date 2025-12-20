@@ -12,3 +12,8 @@ fun main() {
     val t3 = typeOf<Box<out String>>()
     println(t3.arguments) // [out kotlin.String]
 }
+/*
+[kotlin.Int]
+[kotlin.Long, kotlin.Char]
+[out kotlin.String]
+ */

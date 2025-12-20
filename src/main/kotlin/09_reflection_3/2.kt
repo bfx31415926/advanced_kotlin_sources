@@ -6,3 +6,7 @@ fun main() {
     println(typeOf<Int>().isMarkedNullable) // false
     println(typeOf<Int?>().isMarkedNullable) // true
 }
+/*
+ * false
+ * true
+ */

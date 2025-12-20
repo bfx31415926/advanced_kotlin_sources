@@ -1,4 +1,4 @@
-package f_09_reflection_3.s_5
+package f_09_reflection_3.s_5_1
 
 import kotlin.math.ln
 import kotlin.random.Random
@@ -22,7 +22,7 @@ class ValueGenerator(
 
     fun randomValue(type: KType): Any? = when {
         type.isMarkedNullable -> randomNullable(type)
-        type == typeOf<Boolean>() -> randomBoolean()
+        type == typeOf<Boolean>() -> randomNullable(type)
         type == typeOf<Int>() -> randomInt()
         type == typeOf<String>() -> randomString()
         type.isSubtypeOf(typeOf<List<*>>()) ->
@@ -68,25 +68,27 @@ private fun Random.exponential(f: Double): Int {
 fun main() {
     val r = Random(1)
     val g = ValueGenerator(random = r)
-    println(g.randomValue<Int>()) // -527218591
-    println(g.randomValue<Int?>()) // -2022884062
-    println(g.randomValue<Int?>()) // null
-    println(g.randomValue<List<Int>>())// [-1171478239]
-    println(g.randomValue<List<List<Boolean>>>())
-    // [[true, true, false], [], [], [false, false], [],
-    // [true, true, true, true, true, true, true, false]]
-    println(g.randomValue<List<Int?>?>())// [-416634648, null, 382227801]
-    println(g.randomValue<String>()) // WjMNxTwDPrQ
-    println(g.randomValue<List<String?>>())
-    // [VAg, , null, AIKeGp9Q7, 1dqARHjUjee3i6XZzhQ02l, DlG, , ]
+    repeat(20){println(g.randomValue<List<Int?>?>())}
 }
 /*
--527218591
--2022884062
+[315684520, 1278830002, 1985022034, -1476882529, 2007653304, -790149034]
+[-635476277, -875963796]
+[230732034, null, 1685787794, -536786686, -366240659, -599275408, 1914221232]
 null
-[-1171478239]
-[[true, true, false], [], [], [false, false], [], [true, true, true, true, true, true, true, false]]
-[-416634648, null, 382227801]
-WjMNxTwDPrQ
-[VAg, , null, AIKeGp9Q7, 1dqARHjUjee3i6XZzhQ02l, DlG, , ]
+[796487592, 1285964103, 417087274]
+[-767209408, -981126421, null, 1288899021]
+null
+[]
+[]
+[]
+[]
+null
+[]
+[76864096]
+[-2001011299, 445749829, -248088379, 579351217, 1467334995, 2130878562, 767537789]
+null
+[-462421044, 866326223, -929085983, 1021042036, -551068673, 0]
+[-133889947, 1459961400, -956129028, null]
+[]
+null
  */
