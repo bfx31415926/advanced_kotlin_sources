@@ -1,8 +1,3 @@
-/*
-    memberProperties находит имена всех свойств (включая protected и private),
-    но ппрочесть protected и private свойства нельзя
-    Смотри соседний файл myFile2.kt (там работает java-reflect, позволяющий читать все поля)
- */
 package my_experiments.myFile1
 
 import java.lang.reflect.Field
